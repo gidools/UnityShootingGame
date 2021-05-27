@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -55,6 +56,11 @@ public class PlayerMove : MonoBehaviour
 
             tr.position = Vector2.MoveTowards(tr.position, mousePosition, Time.deltaTime * speed);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        SceneManager.LoadScene("GameOver");
     }
 
     private void OnDrawGizmos()
