@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C1B8B763-FEF9-5E38-F1BB-87ADBEA275DD}</ProjectGuid>
+    <ProjectGuid>{4C29D328-2221-BEEB-FDBB-E772EA262183}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,11 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Move.cs" />
-    <Compile Include="Assets\Ch4\BackgroundScroll.cs" />
     <Compile Include="Assets\Ch4\PlayerMove.cs" />
-    <Compile Include="Assets\Ch4\BulletMove.cs" />
     <Compile Include="Assets\Ch4\EnemyMove.cs" />
+    <Compile Include="Assets\Ch4\BackgroundScroll.cs" />
     <Compile Include="Assets\Ch4\EnemyCreate.cs" />
+    <Compile Include="Assets\Ch4\BulletMove.cs" />
+    <Compile Include="Assets\Ch4\Score.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

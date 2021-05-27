@@ -28,6 +28,8 @@ public class EnemyMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        GameObject.Find("GameManager").GetComponent<Score>().score += 10;
+
         Destroy(this.gameObject);
         Destroy(collision.gameObject);
     }
